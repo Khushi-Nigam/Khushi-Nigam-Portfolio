@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khushi | Data Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="light-mode">
+    <header>
+        <h1>Khushi's Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        </nav>
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0)" onclick="toggleDarkMode()">Toggle Mode</a>
+        </div>
+    </header>
+
+    <section class="hero relative overflow-hidden">
+        <svg class="absolute top-0 left-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,192L80,181.3C160,171,320,149,480,138.7C640,128,800,128,960,117.3C1120,107,1280,85,1360,74.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+        <h2>Hi, I'm Khushi</h2>
+        <p>Welcome to my Portfolio !</p>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Sec1 image.jpg" alt="Khushi Profile Picture" />
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm Khushi, an aspiring Data Analyst with a passion for turning raw data into actionable insights.
+                    I work with tools like Excel, Power BI, SQL, and Python, and enjoy solving real-world business
+                    problems through data storytelling.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="skills py-12 px-4 bg-white dark:bg-[#1e1e1e]" id="skills">
+        <div class="skills-container max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-blue-700 dark:text-blue-300">Skills & Tools</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto">
+                A blend of technical and analytical skills that help me transform data into business value.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📊 Excel</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🗂️ SQL</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📈 Power BI</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🐍 Python</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📉 Data Visualization</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🤖 Machine Learning</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🔍 Data Cleaning</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🧠 Critical Thinking</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📋 Project Management</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🛠️ JIRA</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    🚀 Agile Methodology</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📚 Data Storytelling</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📦 Git & GitHub</div>
+                <div class="skill-card bg-[#e0f0ff] dark:bg-[#3a3a3a] py-4 px-3 rounded-lg shadow text-sm font-medium">
+                    📂 Business Intelligence</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+
+            <!-- Project Section Heading + Filters -->
+            <div class="projects-container">
+                <h2 class="text-3xl font-semibold mb-6 text-blue-700 text-center">Projects</h2>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <button
+                        class="filter-btn w-32 h-10 rounded-full bg-gray-200 text-gray-800 font-semibold text-sm hover:bg-blue-100 transition"
+                        data-filter="all">All</button>
+                    <button
+                        class="filter-btn w-32 h-10 rounded-full bg-gray-200 text-gray-800 font-semibold text-sm hover:bg-blue-100 transition"
+                        data-filter="excel">Excel</button>
+                    <button
+                        class="filter-btn w-32 h-10 rounded-full bg-gray-200 text-gray-800 font-semibold text-sm hover:bg-blue-100 transition"
+                        data-filter="powerbi">Power BI</button>
+                    <button
+                        class="filter-btn w-32 h-10 rounded-full bg-gray-200 text-gray-800 font-semibold text-sm hover:bg-blue-100 transition"
+                        data-filter="sql">SQL</button>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card" data-category="powerbi">
+                        <h3>📊 HR Analytics Dashboard</h3>
+                        <p>Built using Power BI and Excel to analyze employee attrition, performance, and departmental
+                            trends.</p>
+                        <a href="https://github.com/Khushi-Nigam/HR-Analytics-Dashboard">View Project</a>
+                    </div>
+
+                    <div class="project-card" data-category="powerbi">
+                        <h3>💸 PhonePe Transactions Analysis</h3>
+                        <p>Created an interactive dashboard in Power BI to visualize transaction volume, value, and
+                            state-wise growth using Excel data.</p>
+                        <a href="https://github.com/Khushi-Nigam/PhonePe-Transactions-Data-Analysis">View Project</a>
+                    </div>
+
+                    <div class="project-card" data-category="excel">
+                        <h3>☕ Coffee Shop Sales Analysis</h3>
+                        <p>Used Excel to explore sales trends, peak hours, and product-wise performance for better
+                            business
+                            insights.</p>
+                        <a href="https://github.com/Khushi-Nigam/Coffee-Shop-Sales">View Project</a>
+                    </div>
+
+                    <div class="project-card" data-category="sql">
+                        <h3>🍕 Pizza Sales Analysis</h3>
+                        <p>Performed SQL queries to analyze top-selling pizzas, revenue trends, and order patterns from
+                            raw
+                            sales data.</p>
+                        <a href="https://github.com/Khushi-Nigam/sql_report_pizza_sales">View Project</a>
+                    </div>
+                    <div class="project-card" data-category="powerbi">
+                        <h3>💼 Finance Data Analysis</h3>
+                        <p>Used Excel and Power BI to assess financial performance, forecast trends, and generate
+                            actionable
+                            investment insights.</p>
+                        <a href="https://github.com/Khushi-Nigam/Financial-Dashboard">View Project</a>
+                    </div>
+                    <div class="project-card" data-category="excel">
+                        <h3>🛍️ Vrinda Store Sales Analysis</h3>
+                        <p>Analyzed product-wise and monthly sales performance for Vrinda Store using Power BI,
+                            highlighting
+                            top categories and revenue trends.</p>
+                        <a href="https://github.com/Khushi-Nigam/Vrinda-Store-Sales-Analysis">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <h2>Experience & Job Simulations</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>📊 Accenture North America - Data Analytics and Visualization Job Simulation</h3>
+                        <span class="timeline-date">April 2025- June 2025</span>
+                        <p>
+                            • Analyzed and cleaned client data to identify performance issues.<br>
+                            • Built data-driven recommendations using Excel and PowerPoint.<br>
+                            • Presented insights in a simulated client-facing environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>💼 Deloitte Australia- Data Analytics Job Simulation</h3>
+                        <span class="timeline-date">Jan 2025 - April 2025</span>
+                        <p>
+                            • Solved stakeholder-focused challenges using Excel and Tableau.<br>
+                            • Completed consulting tasks like analyzing business cases and visualizing data.<br>
+                            • Earned a Deloitte certificate and reviewed model answers for feedback
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="certifications" id="certifications">
+        <div class="certifications-container">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>Business Analysis Foundations-IIBA </h3>
+                    <p>Covered fundamentals of business analysis, including requirement gathering, stakeholder analysis,
+                        user stories, and basic process modeling.
+
+                    </p>
+                    <a href="javascript:void(0)" onclick="openModal('certBA')">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>ChatGPT and AI Tools - be10x</h3>
+                    <p>Learned to use ChatGPT and AI tools to automate daily professional tasks, improve productivity,
+                        and enhance workflow efficiency.
+
+                    </p>
+                    <a href="javascript:void(0)" onclick="openModal('certAI')">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <h3> SQL Certification - Hackerrank</h3>
+                    <p>Practiced SQL concepts like joins, filters, subqueries, and aggregations to analyze business data
+                        and generate useful insights.</p>
+                    <a href="javascript:void(0)" onclick="openModal('certSQL')">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>Agile Requirement Foundations-PMI</h3>
+                    <p>Explored Agile concepts, Scrum practices, user stories, and JIRA usage for managing project
+                        requirements and team collaboration</p>
+                    <a href="javascript:void(0)" onclick="openModal('certAgile')">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 px-4 text-center bg-[#fdf6e3] dark:bg-[#2b2b2b]">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-yellow-800 dark:text-yellow-300">
+            ☕ Like my work? Support me with a Coffee!
+        </h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 max-w-xl mx-auto">
+            If you enjoy my dashboards and insights, you can send me a virtual coffee for just ₹10!
+        </p>
+        <a href="upi://pay?pa=nigamkhushi125@oksbi&pn=Khushi%20Nigam&am=10&cu=INR" class="coffee-button">
+            ☕ Buy me a coffee
+        </a>
+    </section>
+
+    <footer id="contact">
+        <p>Contact me at <strong>nigamkhushi125@gmail.com</strong> | <a href="https://www.linkedin.com/in/khushinigam7"
+                style="color:#00b4d8">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        }
+
+        const buttons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                projects.forEach(project => {
+                    const category = project.getAttribute('data-category');
+                    project.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
+                });
+
+                // Optional: Highlight the active button
+                buttons.forEach(btn => btn.classList.remove('bg-blue-500', 'text-white'));
+                button.classList.add('bg-blue-500', 'text-white');
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Modal for Business Analysis Foundations Certificate -->
+    <div id="certBA"
+        class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg shadow-xl max-w-xl w-full text-center relative">
+            <span class="absolute top-3 right-4 text-2xl cursor-pointer text-gray-600"
+                onclick="closeModal('certBA')">&times;</span>
+            <img src="IIBA.png" alt="Business Analysis Certificate"
+                class="mb-4 mx-auto max-h-[400px] w-full object-contain rounded" />
+            <a href="CertificateOfCompletion_Business Analysis Foundations (5).pdf" download
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg inline-block">
+                Download Certificate
+            </a>
+        </div>
+    </div>
+    <!-- ChatGPT AI Tools Modal -->
+    <div id="certAI"
+        class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg shadow-xl max-w-xl w-full text-center relative">
+            <span class="absolute top-3 right-4 text-2xl cursor-pointer text-gray-600 dark:text-gray-300"
+                onclick="closeModal('certAI')">&times;</span>
+            <img src="chatgpt.jpeg" alt="ChatGPT AI Certificate"
+                class="mb-4 mx-auto max-h-[400px] w-full object-contain rounded" />
+            <a href="chatgpt.jpeg" download
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg inline-block">Download
+                Certificate</a>
+        </div>
+    </div>
+
+    <!-- SQL Modal -->
+    <div id="certSQL"
+        class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg shadow-xl max-w-xl w-full text-center relative">
+            <span class="absolute top-3 right-4 text-2xl cursor-pointer text-gray-600 dark:text-gray-300"
+                onclick="closeModal('certSQL')">&times;</span>
+            <img src="sql.png" alt="SQL Certificate" class="mb-4 mx-auto max-h-[400px] w-full object-contain rounded" />
+            <a href="SQL.pdf" download
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg inline-block">Download
+                Certificate</a>
+        </div>
+    </div>
+
+    <!-- Agile Modal -->
+    <div id="certAgile"
+        class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg shadow-xl max-w-xl w-full text-center relative">
+            <span class="absolute top-3 right-4 text-2xl cursor-pointer text-gray-600 dark:text-gray-300"
+                onclick="closeModal('certAgile')">&times;</span>
+            <img src="PMI.png" alt="Agile Certificate"
+                class="mb-4 mx-auto max-h-[400px] w-full object-contain rounded" />
+            <a href="CertificateOfCompletion_Agile Requirements Foundations.pdf" download
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg inline-block">Download
+                Certificate</a>
+        </div>
+    </div>
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove("hidden");
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add("hidden");
+        }
+    </script>
+
+</body>
+
+</html>
