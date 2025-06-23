@@ -10,7 +10,77 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        .about-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        /* Pink Button */
+        .pink-btn {
+            background-color: #ff4da6;
+            color: white;
+        }
+
+        .pink-btn:hover {
+            background-color: #cc3c85;
+        }
+
+        /* Blue Button */
+        .blue-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .blue-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .about-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .pink-btn {
+                background-color: #ff66b3;
+            }
+
+            .pink-btn:hover {
+                background-color: #cc4d8c;
+            }
+
+            .blue-btn {
+                background-color: #339aff;
+            }
+
+            .blue-btn:hover {
+                background-color: #1a75d1;
+            }
+        }
+    </style>
 </head>
 
 <body class="light-mode">
