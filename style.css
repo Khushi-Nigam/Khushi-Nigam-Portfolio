@@ -1083,6 +1083,24 @@ body.dark-mode .skill-tag {
     font-weight: 500;
     text-decoration: underline;
 }
+.what-i-bring {
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 20px;
+}
+
+.what-i-bring h3 {
+  margin-bottom: 10px;
+}
+
+.what-i-bring ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  
+}
+
+.what-i-bring li {
+  margin-bottom: 8px;
+}
 
 /* Dark mode support */
 body.dark-mode .cert-inline-link {
