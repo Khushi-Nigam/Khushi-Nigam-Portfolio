@@ -1128,3 +1128,111 @@ body.dark-mode .skill-tag {
 body.dark-mode .cert-inline-link {
     color: #90e0ef;
 }
+
+        .about-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+      
+
+        /* Blue Button */
+        .blue-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .blue-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .about-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .pink-btn {
+                background-color: #ff66b3;
+            }
+
+            .pink-btn:hover {
+                background-color: #cc4d8c;
+            }
+
+            .blue-btn {
+                background-color: #339aff;
+            }
+
+            .blue-btn:hover {
+                background-color: #1a75d1;
+            }
+        }
+        header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust this height as per your design */
+  background-color: #000; /* or your preferred color */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+nav a, .toggle-btn {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Optional: fix hamburger and sidebar for mobile */
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  display: none; /* You can override for mobile */
+}
+
+/* Sidebar fix if needed */
+.sidebar {
+  position: fixed;
+  top: 60px; /* Same height as header */
+  left: 0;
+  background-color: #111;
+  width: 250px;
+  height: 100%;
+  display: none;
+  z-index: 999;
+}
+
+/* Push content below fixed header */
+body {
+  margin: 0;
+  padding-top: 60px; /* Same as header height */
+}
