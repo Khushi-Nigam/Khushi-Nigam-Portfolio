@@ -1238,7 +1238,7 @@ nav a,
     position: fixed;
     top: 60px;
     /* Same height as header */
-    left: 0;
+    right: 0;
     background-color: #111;
     width: 250px;
     height: 100%;
@@ -1251,4 +1251,21 @@ body {
     margin: 0;
     padding-top: 60px;
     /* Same as header height */
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    nav {
+        display: none; /* Hide desktop nav */
+    }
+
+    .sidebar {
+        display: none; /* Keep hidden until activated */
+    }
+
+    .sidebar.active {
+        display: block; /* Show when toggled */
+    }
 }
