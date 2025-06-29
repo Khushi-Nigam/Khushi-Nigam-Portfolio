@@ -11,19 +11,61 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    /* By default, hide mobile version of icons */
+.mobile-icons {
+  display: none;
+}
 
+/* Show mobile icons on small screens only */
+@media (max-width: 768px) {
+  .mobile-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  /* Hide the icon links inside the nav bar */
+  nav > a:nth-child(1),
+  nav > a:nth-child(2) {
+    display: none;
+  }
+}
+</style>
 </head>
 
 <body class="light-mode">
     <header>
         <h1>Khushi's Portfolio</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <button id="darkModeToggle" class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
-        </nav>
+<!-- Mobile icons - shown only on small screens -->
+<div class="mobile-icons">
+  <a href="https://github.com/Khushi-Nigam" target="_blank" style="margin-right: 10px;">
+    <i class="fab fa-github" style="font-size: 18px;"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/khushinigam7/" target="_blank" style="margin-right: 10px;">
+    <i class="fab fa-linkedin" style="font-size: 18px; color: #0077B5;"></i>
+  </a>
+</div>
+
+<nav>
+    <!-- Social Icons -->
+    <a href="https://github.com/Khushi-Nigam"  style="margin-right: 10px;">
+        <i class="fab fa-github" style="font-size: 18px;"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/khushinigam7/" style="margin-right: 20px;">
+        <i class="fab fa-linkedin" style="font-size: 18px; color: #0077B5;"></i>
+    </a>
+
+    <!-- Navigation Links -->
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="darkModeToggle" class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+</nav>
+  
         <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+        
         <div id="sidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
             <a href="#">Home</a>
