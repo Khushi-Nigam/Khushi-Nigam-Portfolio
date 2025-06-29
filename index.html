@@ -402,11 +402,15 @@
                         and generate useful insights.</p>
                     <a href="javascript:void(0)" onclick="openModal('certSQL')">View Certificate</a>
                 </div>
-
-                <div class="cert-card">
+                 <div class="cert-card">
                     <h3>Agile Requirement Foundations-PMI</h3>
                     <p>Explored Agile concepts, Scrum practices, user stories, and JIRA usage for managing project
                         requirements and team collaboration</p>
+                    <a href="javascript:void(0)" onclick="openModal('certAgile')">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>Generative AI for Business Analysts-IIBA</h3>
+                    <p> Learned How Generative AI helps Business Analysts in their day to day work from stakeholder communication to structured documentation</p>
                     <a href="javascript:void(0)" onclick="openModal('certAgile')">View Certificate</a>
                 </div>
             </div>
@@ -499,7 +503,18 @@
                 Certificate</a>
         </div>
     </div>
-
+ <!-- GenAI Modal -->
+    <div id="certSQL"
+        class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg shadow-xl max-w-xl w-full text-center relative">
+            <span class="absolute top-3 right-4 text-2xl cursor-pointer text-gray-600 dark:text-gray-300"
+                onclick="closeModal('certSQL')">&times;</span>
+            <img src="GenAI.png" alt="GenAI fo BA's" class="mb-4 mx-auto max-h-[400px] w-full object-contain rounded" />
+            <a href="CertificateOfCompletion_Generative AI for Business Analysts.pdf" download
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg inline-block">Download
+                Certificate</a>
+        </div>
+    </div>
     <!-- Agile Modal -->
     <div id="certAgile"
         class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
